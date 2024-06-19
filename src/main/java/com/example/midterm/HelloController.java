@@ -23,9 +23,9 @@ public class HelloController {
     private TableColumn<Diagnosis, String> col1, col2, col3, col4;
 
     private Connection connect() {
-        String url = "dbc:mysql://localhost:3306/Midterm"; // Replace with your database URL
-        String user = "root"; // Replace with your MySQL username
-        String password = "Mysql2255"; // Replace with your MySQL password
+        String url = "dbc:mysql://localhost:3306/Midterm"; 
+        String user = "root"; 
+        String password = "Mysql2255"; 
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url, user, password);
@@ -80,7 +80,7 @@ public class HelloController {
 
     @FXML
     private void handleClose(ActionEvent event) {
-        // Close the application
+       
         System.exit(0);
     }
 }
