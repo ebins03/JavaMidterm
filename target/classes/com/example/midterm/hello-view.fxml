@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.midterm.HelloController">
+   <children>
+      <Label layoutX="28.0" layoutY="28.0" text="Name: Ebin Sabu " />
+      <Label layoutX="139.0" layoutY="28.0" text="StudentID: 200569368" />
+      <Label layoutX="28.0" layoutY="91.0" text="PatientID: " />
+      <Label layoutX="28.0" layoutY="308.0" text="Symptoms" />
+      <Label layoutX="28.0" layoutY="335.0" text="Diagnosis" />
+      <Label layoutX="28.0" layoutY="363.0" text="Medicine" />
+      <Label layoutX="28.0" layoutY="392.0" text="Ward Required?" />
+      <TextField layoutX="100.0" layoutY="87.0" />
+      <TextField layoutX="122.0" layoutY="304.0" />
+      <TextField layoutX="123.0" layoutY="331.0" />
+      <TextField layoutX="123.0" layoutY="359.0" />
+      <CheckBox fx:id="wardRequiredCheckBox" layoutX="146.0" layoutY="392.0" mnemonicParsing="false" text="Yes" />
+      <Button layoutX="274.0" layoutY="87.0" mnemonicParsing="false" onAction="#addDiagnosis" text="Search" />
+      <Button layoutX="27.0" layoutY="427.0" mnemonicParsing="false" onAction="#addDiagnosis" text="Save" />
+      <Button layoutX="520.0" layoutY="427.0" mnemonicParsing="false" text="Close" />
+      <TableView layoutX="28.0" layoutY="130.0" prefHeight="138.0" prefWidth="538.0">
+        <columns>
+          <TableColumn fx:id="patientIDField" prefWidth="93.5999755859375" text="PatientID" />
+          <TableColumn fx:id="symptomsField" prefWidth="110.39996337890625" text="Symptoms" />
+            <TableColumn fx:id="diagnosisField" prefWidth="112.0" text="Diagnosis" />
+            <TableColumn fx:id="medicinesField" prefWidth="96.0" text="Medicines" />
+            <TableColumn prefWidth="128.79998779296875" text="Ward Required" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
